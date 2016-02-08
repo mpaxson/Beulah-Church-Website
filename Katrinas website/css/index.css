@@ -1,0 +1,49 @@
+.center{
+	text-align: center;
+}
+
+.vcenter{
+	vertical-align: center;
+}
+
+
+
+.worship, .upcoming_events{
+		padding-top: 2px;
+}
+
+.worship_text, .upcoming_events_text{
+	padding-top: 5px;
+}
+
+.umc{
+	padding-top: 2px;
+}
+	
+.subjects{
+
+}
+
+.footer{
+	bottom = 0;
+	height = 80px;
+}
+
+
+/* adjust the pading with lower screen sizes*/
+@media(min-width:768px){
+	.worship, .upcoming_events{
+		padding-top: 10px;
+	}
+	.worship_text, .upcoming_events_text{
+		padding-top: 19px;
+	}
+	.umc{
+		padding-top: 5px;
+	}
+	
+	.subjects{
+		font-size: 22px;
+		line-height: 28px;
+	}
+}
