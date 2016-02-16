@@ -1,3 +1,52 @@
+body {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background: url("../img/church01.jpg");
+  opacity: 0.20;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-position-left: 1000px;
+  position: absolute;
+  z-index: -1;   
+
+}
+   /*
+html{
+	
+	background: url("../img/church01.jpg") !important ;
+	background-opacity: 0.15;
+	height: 130%;
+	width: 100%;
+	bottom: 50%
+	right: 0;
+
+	z-index: 1;
+	position: absolute;
+
+
+
+}
+#bg{
+ 	background: url(../img/church01.JPG) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+ 	opacity:0.15;
+ 	z-index: 0;
+ 	
+}*/
+
+
 .center{
 	text-align: center;
 }
