@@ -1,88 +1,113 @@
 body {
-  width: 100%;
-  height: 100%;
-  display: block;
- /* position: relative;*/
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 body::after {
-  content: "";
-  background: url("../img/church01.jpg");
-  opacity: 0.20;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-
-}
-  
-
-.center{
-	text-align: center;
+    content: "";
+    background-image: url("../img/church01.jpg");
+    opacity: 0.20;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
 }
 
-.vcenter{
-	vertical-align: center;
+.pageWrapper {
+    padding-top: 40px;
 }
 
-.worship, .upcoming_events{
-		padding-top: 2px;
+.center {
+    text-align: center;
 }
 
-.worship_text, .upcoming_events_text{
-	padding-top: 5px;
+.vcenter {
+    vertical-align: center;
 }
 
-.umc{
-	padding-top: 2px;
+.worship, .upcoming_events {
+    padding-top: 2px;
 }
-	
-.subjects{
+
+.worship_text, .upcoming_events_text {
+    padding-top: 5px;
+}
+
+.umc {
+    padding-top: 2px;
+}
+
+.subjects {}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    background-color: #1b1b1b;
+    color: white;
+    font-size: 16px;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: fixed;
 
 }
 
-.footer{
-	width: 100%;
-	height: 40px;
-	bottom: 0;
-	background-color: #1b1b1b;
-	color: white;
-	font-size: 16px;
-	padding: 0 !important;
-	margin: 0 !important;
-	position: absolute;
+#email {
+    padding: 10px 10px 10px 10px;
 }
 
-#email{
-	padding: 10px 10px 10px 10px;
+#phone {
+    padding: 10px 10px 10px 10px;
 }
-#phone{
-	padding: 10px 10px 10px 10px;
+
+#address {
+    padding: 10px 10px 10px 10px;
 }
-#address{
-	padding: 10px 10px 10px 10px;
+
+#facebook {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
 }
-#facebook{
-	padding: 10px 10px 10px 10px;
-	text-align: center;
-}
+
 
 /* adjust the pading with lower screen sizes*/
-@media(min-width:768px){
-	.worship, .upcoming_events{
-		padding-top: 10px;
-	}
-	.worship_text, .upcoming_events_text{
-		padding-top: 19px;
-	}
-	.umc{
-		padding-top: 5px;
-	}
-	
-	.subjects{
-		font-size: 22px;
-		line-height: 28px;
-	}
+
+@media(min-width:768px) {
+    .worship, .upcoming_events {
+        padding-top: 10px;
+    }
+    .worship_text, .upcoming_events_text {
+        padding-top: 19px;
+    }
+    .umc {
+        padding-top: 5px;
+    }
+    .subjects {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .pageWrappers{
+        padding-top: 40px;
+
+    }
+}
+
+
+
+/*Medium Screen Sizes*/
+
+@media (min-width: 992px) {
+
+    .pageWrapper{
+        padding-top: 80px;
+    }
+    #carousel{
+        width: 70%;
+    }
+
 }
