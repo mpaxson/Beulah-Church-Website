@@ -8,7 +8,7 @@ const ministryPage = ".ministry";
 const childrenPage = ".children";
 const youthPage = ".youth";
 const pantryPage = ".pantry";
-const calenderPage = ".calender";
+const calenderPage = ".calendar";
 
 var timeOut;
 var currentPage;
@@ -16,7 +16,7 @@ var currentPage;
 //on page load
 $(function(){
     currentPage = homePage;
-})
+});
 
 
 /*===========headers===========================================================
