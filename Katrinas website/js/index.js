@@ -7,7 +7,8 @@ const staffPage = ".staff";
 const ministryPage = ".ministry";
 const childrenPage = ".children";
 const youthPage = ".youth";
-const pantryHeader = ".pantry";
+const pantryPage = ".pantry";
+const calenderPage = ".calender";
 
 var timeOut;
 var currentPage;
@@ -18,8 +19,12 @@ $(function(){
 })
 
 
-/*===========headers===================================
-======================================================*/
+/*===========headers===========================================================
+                    This will be used to handle the loading.
+    "pages" will be loaded in at start and will remain hidden so the user will
+    experience zero load time after initial page. If the internet goes out after
+    the initial page load no further internet connection should be needed
+=============================================================================*/
 
 
 
@@ -52,10 +57,13 @@ $( ".pantryHeader" ).click( function () {
     loadPage( pantryPage );
 } );
 
+$( ".calenderHeader" ).click( function () {
+    loadPage( calenderPage );
+} );
 
 
-/*======================================================
-======================================================*/
+/*========================================================================
+========================================================================*/
 
 
 /*To be used to make sure the load page will be loaded between pages*/

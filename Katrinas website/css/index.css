@@ -6,7 +6,8 @@ body {
 
 body::after {
     content: "";
-    background-image: url("../img/church01.jpg");
+    background-image: url("../img/inside_01.jpg");
+    background-position: center;
     opacity: 0.20;
     top: 0;
     left: 0;
@@ -23,7 +24,7 @@ body::after {
 }
 
 .navButton{
-
+c
 }
 .center {
     text-align: center;
@@ -109,8 +110,9 @@ body::after {
     .pageWrapper{
         padding-top: 80px;
     }
-    #carousel{
-        width: 70%;
+    .carousel{
+        text-align: center;
+
     }
 
 }
