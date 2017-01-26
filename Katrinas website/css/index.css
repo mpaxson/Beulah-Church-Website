@@ -18,7 +18,17 @@ body::after {
     padding: 0;
     margin: 0;
 }
-
+.staff{
+    width:90%;
+    margin-right:5px;
+    
+}
+.staffPic{
+    display: block;
+    max-height :250px;
+    height: auto;
+    width:auto;
+}
 .pageWrapper {
     padding-top: 40px;
 }
