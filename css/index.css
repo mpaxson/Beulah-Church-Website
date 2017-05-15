@@ -6,7 +6,7 @@ body {
 
 body::after {
     content: "";
-    background-image: url("../img/inside_01.jpg");
+    background-image: url("../img/dogwood.JPG");
     background-position: 50% 55%;
     opacity: 0.20;
     top: 0;
