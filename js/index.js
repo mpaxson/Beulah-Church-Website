@@ -9,7 +9,7 @@ const childrenPage = ".children";
 const youthPage = ".youth";
 const pantryPage = ".pantry";
 const calenderPage = ".calendar";
-
+const historyPage = ".history";
 var timeOut;
 var currentPage;
 
@@ -26,7 +26,7 @@ $(function(){
     the initial page load no further internet connection should be needed
 =============================================================================*/
 
-
+/*".calendarHeader is a css class. These are the buttons on the navbar and are identified by <div CLASS=..."*/
 
 $( ".homeHeader" ).click( function () {
     loadPage( homePage );
@@ -59,6 +59,9 @@ $( ".pantryHeader" ).click( function () {
 
 $( ".calenderHeader" ).click( function () {
     loadPage( calenderPage );
+} );
+$( ".historyHeader" ).click( function () {
+    loadPage( historyPage );
 } );
 
 
